@@ -23,16 +23,16 @@ return maxArray
  * @param {number[]} nestedList 
  * @returns {number[]} maxArray
  */
- function getMaximums(nestedList: number[]): number[] {
-    let maxValue
-    let maxArray = []
+ function getMaximums(nestedList: number[][]): number[] {
+    let maxValue;
+    let maxArray = [];
 
     for (let item of nestedList) {
-        maxValue = Math.max(item)
+        maxValue = Math.max(...item)
         maxArray.push(maxValue)
     }
 
-    return maxArray.length
+    return maxArray;
 }
 
 console.log(getMaximums([[30,40,50],[1,2,3],[6,7,8]]),[50,3,8])
