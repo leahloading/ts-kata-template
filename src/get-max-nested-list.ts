@@ -36,3 +36,5 @@ return maxArray
 }
 
 console.log(getMaximums([[30,40,50],[1,2,3],[6,7,8]]),[50,3,8])
+
+module.exports = getMaximums;
